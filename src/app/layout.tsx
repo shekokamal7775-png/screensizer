@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Metadata } from 'next'
-import '../styles/tailwind.css'
+import '../../tailwind.css'
 import { Toaster } from 'sonner'
 
 export const metadata: Metadata = {
