@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '../../Header';
+import Footer from '../../Footer';
 import HeroSection from './components/HeroSection';
 import MetricsGrid from './components/MetricsGrid';
 import DeviceInfoCards from './components/DeviceInfoCards';
@@ -30,4 +30,4 @@ export default function HomePage() {
       <Footer />
     </>
   );
-        }
+}
