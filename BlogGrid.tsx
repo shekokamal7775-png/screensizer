@@ -1,5 +1,5 @@
 import React from 'react';
-import AppImage from '@/components/ui/AppImage';
+
 import Link from 'next/link';
 import { Clock, ArrowRight } from 'lucide-react';
 
