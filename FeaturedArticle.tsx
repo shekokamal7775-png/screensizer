@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import AppImage from '@/components/ui/AppImage';
+import AppImage from './AppImage';
 import { Clock, Calendar, User, ArrowRight, Share2, Bookmark } from 'lucide-react';
 
 // Inline SVG icons to replace react-feather
