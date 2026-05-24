@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import AppLogo from '@/components/ui/AppLogo';
 import { Monitor, Rss } from 'lucide-react';
 
 const TwitterIcon = ({ size = 16 }: { size?: number }) => (
@@ -44,10 +43,9 @@ export default function Footer() {
     <footer className="bg-secondary border-t border-border mt-20">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <AppLogo size={32} />
+              <img src="/app_logo.png" alt="ScreenSizer Logo" width={32} height={32} />
               <span className="font-bold text-base text-foreground">ScreenSizer</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed mb-5">
@@ -65,8 +63,6 @@ export default function Footer() {
               </a>
             </div>
           </div>
-
-          {/* Tools */}
           <div>
             <h3 className="text-sm font-700 text-foreground uppercase tracking-wider mb-4 flex items-center gap-1.5">
               <Monitor size={14} className="text-primary" />
@@ -82,8 +78,6 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
-          {/* Content */}
           <div>
             <h3 className="text-sm font-700 text-foreground uppercase tracking-wider mb-4">Resources</h3>
             <ul className="space-y-2.5">
@@ -96,8 +90,6 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
-          {/* Legal */}
           <div>
             <h3 className="text-sm font-700 text-foreground uppercase tracking-wider mb-4">Company</h3>
             <ul className="space-y-2.5">
@@ -111,15 +103,9 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-
-        {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-muted-foreground">
-            © 2025 ScreenSizer. All rights reserved.
-          </p>
-          <p className="text-xs text-muted-foreground">
-            Built for developers, designers & QA teams. Free forever.
-          </p>
+          <p className="text-xs text-muted-foreground">© 2025 ScreenSizer. All rights reserved.</p>
+          <p className="text-xs text-muted-foreground">Built for developers, designers & QA teams. Free forever.</p>
           <div className="flex items-center gap-4">
             <Link href="/privacy-policy" className="text-xs text-muted-foreground hover:text-primary transition-colors">Privacy</Link>
             <Link href="/privacy-policy" className="text-xs text-muted-foreground hover:text-primary transition-colors">Terms</Link>
